@@ -1,13 +1,13 @@
 name: Scan a project with Black Duck
   
-  on:
+on:
     push:
       branches: [ main ]
     pull_request:
       branches: [ main ]
     workflow_dispatch:
   
-  jobs:
+jobs:
     blackduck:
       runs-on: ubuntu-latest
       steps:
